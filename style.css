@@ -1,22 +1,27 @@
 body {
     margin: 0;
     font-family: "Segoe UI", Tahoma, sans-serif;
-    background: #0a0a0a;
+    background: #000000; /* deep black */
     color: #e0e0e0;
+    /* Green matrix grid */
+    background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 19px, #003300 19px, #003300 20px),
+        repeating-linear-gradient(90deg, transparent, transparent 19px, #003300 19px, #003300 20px);
+    background-size: auto;
 }
 
-/* Neon glow helper */
+/* Neon green helper */
 .neon {
-    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff;
-    color: #00ffff;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
+    color: #00ff00;
 }
 
 header.hero {
-    background: #1a001f; /* deep cyberpunk purple */
-    color: #ff00ff;
+    background: #001a00; /* dark green */
+    color: #00ff00;
     text-align: center;
     padding: 80px 20px;
-    background-image: linear-gradient(135deg, #300030, #0a001f);
+    background-image: linear-gradient(135deg, #003300, #001a00);
 }
 
 header.hero h1 {
@@ -24,29 +29,29 @@ header.hero h1 {
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: 900;
-    text-shadow: 0 0 8px #ff00ff, 0 0 12px #ff00ff;
+    text-shadow: 0 0 8px #00ff00, 0 0 12px #00ff00;
 }
 
 header.hero p {
     font-size: 1.2rem;
     margin: 10px 0 20px;
-    text-shadow: 0 0 4px #ff00ff;
+    text-shadow: 0 0 4px #00ff00;
 }
 
 a.cta-button {
     display: inline-block;
-    background: #ff00ff;
-    color: #0a0a0a;
+    background: #00ff00;
+    color: #000000;
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
-    box-shadow: 0 0 8px #ff00ff, 0 0 12px #ff00ff;
+    box-shadow: 0 0 8px #00ff00, 0 0 12px #00ff00;
 }
 
 a.cta-button:hover {
-    background: #ff33ff;
-    box-shadow: 0 0 12px #ff33ff;
+    background: #33ff33;
+    box-shadow: 0 0 12px #33ff33;
 }
 
 section#productos, section#contactos {
@@ -59,8 +64,8 @@ section#productos h2, section#contactos h2 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 2rem;
-    color: #ff00ff;
-    text-shadow: 0 0 6px #ff00ff;
+    color: #00ff00;
+    text-shadow: 0 0 6px #00ff00;
 }
 
 .contactos ul {
@@ -75,7 +80,7 @@ section#productos h2, section#contactos h2 {
 }
 
 .contactos a {
-    color: #00ffff;
+    color: #00ff00;
     text-decoration: underline;
 }
 
@@ -86,9 +91,9 @@ section#productos h2, section#contactos h2 {
 }
 
 .card {
-    background: #1a001f;
+    background: #001a00;
     border-radius: 8px;
-    box-shadow: 0 2px 6px #ff00ff;
+    box-shadow: 0 2px 6px #00ff00;
     padding: 15px;
     text-align: center;
     color: #e0e0e0;
@@ -104,17 +109,17 @@ section#productos h2, section#contactos h2 {
 .card h3 {
     margin: 10px 0 5px;
     font-size: 1.2rem;
-    color: #ff00ff;
-    text-shadow: 0 0 4px #ff00ff;
+    color: #00ff00;
+    text-shadow: 0 0 4px #00ff00;
 }
 
 footer {
-    background: #0a0a0a;
+    background: #000000;
     color: #555;
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
-    border-top: 2px solid #ff00ff;
+    border-top: 2px solid #00ff00;
 }
 
 footer p {margin:5px 0;}
