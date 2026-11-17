@@ -1,51 +1,82 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f5f5f5;
-    color: #333;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: #0a0a0a;
+    color: #e0e0e0;
+}
+
+/* Neon glow helper */
+.neon {
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff;
+    color: #00ffff;
 }
 
 header.hero {
-    background: linear-gradient(135deg, #1a73e8, #4285f4);
-    color: white;
+    background: #1a001f; /* deep cyberpunk purple */
+    color: #ff00ff;
     text-align: center;
     padding: 80px 20px;
+    background-image: linear-gradient(135deg, #300030, #0a001f);
 }
 
 header.hero h1 {
     margin: 0;
     font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: 0 0 8px #ff00ff, 0 0 12px #ff00ff;
 }
 
 header.hero p {
     font-size: 1.2rem;
     margin: 10px 0 20px;
+    text-shadow: 0 0 4px #ff00ff;
 }
 
 a.cta-button {
     display: inline-block;
-    background: #ff9800;
-    color: white;
+    background: #ff00ff;
+    color: #0a0a0a;
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
+    box-shadow: 0 0 8px #ff00ff, 0 0 12px #ff00ff;
 }
 
 a.cta-button:hover {
-    background: #e68900;
+    background: #ff33ff;
+    box-shadow: 0 0 12px #ff33ff;
 }
 
-section#productos {
+section#productos, section#contactos {
     padding: 40px 20px;
     max-width: 1200px;
     margin: auto;
 }
 
-section#productos h2 {
+section#productos h2, section#contactos h2 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 2rem;
+    color: #ff00ff;
+    text-shadow: 0 0 6px #ff00ff;
+}
+
+.contactos ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.contactos li {
+    margin: 8px 0;
+}
+
+.contactos a {
+    color: #00ffff;
+    text-decoration: underline;
 }
 
 .product-grid {
@@ -55,30 +86,35 @@ section#productos h2 {
 }
 
 .card {
-    background: white;
+    background: #1a001f;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px #ff00ff;
     padding: 15px;
     text-align: center;
+    color: #e0e0e0;
 }
 
 .card img {
     max-width: 100%;
     border-radius: 4px;
     margin-bottom: 10px;
+    filter: hue-rotate(90deg) saturate(1.5);
 }
 
 .card h3 {
     margin: 10px 0 5px;
     font-size: 1.2rem;
+    color: #ff00ff;
+    text-shadow: 0 0 4px #ff00ff;
 }
 
 footer {
-    background: #222;
-    color: #ddd;
+    background: #0a0a0a;
+    color: #555;
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
+    border-top: 2px solid #ff00ff;
 }
 
 footer p {margin:5px 0;}
